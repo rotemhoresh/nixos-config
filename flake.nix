@@ -1,5 +1,5 @@
 {
-  description = "NixOS configuration";
+  description = "My NixOS, flakes and home-manager configuration";
 
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
@@ -14,6 +14,9 @@
 
   outputs =
     inputs@{ nixpkgs, home-manager, ... }:
+    let
+      config = import ./config.nix;
+    in
     {
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
@@ -26,7 +29,9 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
 
-            home-manager.users.rotemhoresh = import ./home;
+            home-manager.backupFileExtension = "home_manager_backup";
+
+            home-manager.users.${config.me.username} = import ./home;
           }
         ];
       };

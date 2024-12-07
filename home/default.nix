@@ -1,74 +1,52 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
+let
+  config = import ../config.nix;
+in
 {
   imports = [
     ./fonts.nix
+    ./alacritty.nix
+    ./helix.nix
+
+    ./hyprland
+
+    ./go.nix
+    ./rust.nix
+    ./docker.nix
   ];
 
-  home.username = "rotemhoresh";
-  home.homeDirectory = "/home/rotemhoresh";
+  home.username = config.me.username;
+  home.homeDirectory = "/home/${config.me.username}";
 
   home.packages = with pkgs; [
     # utils
     ripgrep
     fzf
+    jq
+    sqlite
 
     # misc
     neofetch
     which
 
+    stremio
+
+    hyprsunset
+
     gnupg
 
-    # lsp
+    lldb
+
+    yaml-language-server
+
     nixd
+    nixfmt-rfc-style
+
     taplo
 
-    # langs
-    rustup
     python3
-    go
   ];
-
-  programs.helix = {
-    enable = true;
-
-    defaultEditor = true;
-
-    ignores = [
-      "target/"
-      "Cargo.lock"
-    ];
-
-    themes = {
-      my_theme = {
-        inherits = "rose_pine_moon";
-        "ui.background" = { };
-      };
-    };
-
-    languages = {
-      language-server.nixd = with pkgs; {
-        command = "${nixd}/bin/nixd";
-      };
-
-      language = [
-        {
-          name = "nix";
-          language-servers = [
-            "nixd"
-          ];
-        }
-      ];
-    };
-
-    settings = {
-      theme = "my_theme";
-      editor = {
-        line-number = "relative";
-        mouse = false;
-      };
-    };
-  };
 
   programs.tmux = {
     enable = true;
@@ -89,12 +67,11 @@
   programs.git = {
     enable = true;
 
-    userName = "Rotem Horesh";
-    userEmail = "horesh.rotem@gmail.com";
+    userName = config.me.fullname;
+    userEmail = config.me.email;
 
     signing = {
       key = "FA5492BE76A4974A";
-      # key = null;
       signByDefault = true;
     };
 
@@ -115,16 +92,6 @@
 
     settings = {
       add_newline = true;
-    };
-  };
-
-  programs.alacritty = {
-    enable = true;
-
-    settings = {
-      font = {
-        size = 12;
-      };
     };
   };
 
