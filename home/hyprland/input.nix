@@ -8,7 +8,7 @@
       repeat_rate = 40; # per second
       repeat_delay = 400; # in milliseconds
 
-      follow_mouse = 3; # keyboard and mouse detached
+      follow_mouse = 1;
 
       touchpad = {
         natural_scroll = true;

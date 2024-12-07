@@ -31,6 +31,8 @@ in
     which
 
     stremio
+    spotify
+    discord
 
     hyprsunset
 
