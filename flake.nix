@@ -29,7 +29,7 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
 
-            home-manager.backupFileExtension = "home_manager_backup";
+            # home-manager.backupFileExtension = "home_manager_backup";
 
             home-manager.users.${config.me.username} = import ./home;
           }
