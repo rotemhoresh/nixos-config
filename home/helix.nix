@@ -1,53 +1,98 @@
-{ pkgs, ... }:
-
 {
-  programs.helix = {
-    enable = true;
+  lib,
+  config,
+  pkgs,
+  ...
+}:
 
-    defaultEditor = true;
+let
+  cfg = config.helix;
+in
+{
+  options.helix = {
+    enable = lib.mkEnableOption "Helix Editor";
+  };
 
-    ignores = [
-      "target/"
-      "Cargo.lock"
-    ];
+  config = lib.mkIf cfg.enable {
+    programs.helix = {
+      enable = true;
 
-    themes = {
-      my_theme = {
-        inherits = "rose_pine_moon";
-        "ui.background" = { };
-      };
-    };
+      defaultEditor = true;
 
-    languages = {
-      language-server.nixd = with pkgs; {
-        command = "${nixd}/bin/nixd";
-      };
+      ignores = [
+        "target/"
+        "Cargo.lock"
 
-      language = [
-        {
-          name = "nix";
-          language-servers = [
-            "nixd"
-          ];
-          formatter = {
-            command = "nixfmt";
-          };
-        }
+        "go.sum"
+
+        "node_modules/"
       ];
-    };
 
-    settings = {
-      theme = "my_theme";
-      editor = {
-        line-number = "relative";
-        mouse = false;
-        rulers = [
-          80
+      themes = {
+        my_theme = {
+          inherits = "rose_pine_moon";
+          "ui.background" = { };
+        };
+      };
+
+      languages = {
+        language-server.nixd = with pkgs; {
+          command = "${nixd}/bin/nixd";
+        };
+
+        language = [
+          {
+            name = "nix";
+            language-servers = [
+              "nixd"
+            ];
+            formatter = {
+              command = "nixfmt";
+            };
+            auto-format = true;
+          }
+          {
+            name = "python";
+            auto-format = true;
+          }
+          {
+            name = "typescript";
+            auto-format = true;
+          }
+          {
+            name = "javascript";
+            auto-format = true;
+          }
         ];
-        bufferline = "multiple";
-        popup-border = "all";
+      };
+
+      settings = {
+        theme = "my_theme";
+        editor = {
+          line-number = "relative";
+          mouse = false;
+          rulers = [
+            80
+          ];
+          bufferline = "multiple";
+          popup-border = "all";
+        };
+
+        keys = {
+          normal = {
+            g.l = [
+              "select_mode"
+              "goto_line_end"
+              "normal_mode"
+            ]; # make `gl` select to line end, instead of just go there
+            g.h = [
+              "select_mode"
+              "goto_line_start"
+              "normal_mode"
+            ];
+          };
+        };
       };
     };
   };
-
 }

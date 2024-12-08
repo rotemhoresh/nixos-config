@@ -1,13 +1,16 @@
 { pkgs, ... }:
 
 let
-  config = import ../config.nix;
+  conf = import ../config.nix;
 in
 {
   imports = [
     ./fonts.nix
     ./alacritty.nix
     ./helix.nix
+    ./git.nix
+    ./starship.nix
+    ./tmux.nix
 
     ./hyprland
 
@@ -16,8 +19,28 @@ in
     ./docker.nix
   ];
 
-  home.username = config.me.username;
-  home.homeDirectory = "/home/${config.me.username}";
+  home.username = conf.me.username;
+  home.homeDirectory = "/home/${conf.me.username}";
+
+  git = {
+    enable = true;
+    name = conf.me.fullname;
+    email = conf.me.email;
+  };
+
+  hyprland.enable = true;
+
+  helix.enable = true;
+
+  go.enable = true;
+
+  docker.enable = true;
+
+  alacritty.enable = true;
+
+  starship.enable = true;
+
+  tmux.enable = true;
 
   home.packages = with pkgs; [
     # utils
@@ -50,53 +73,6 @@ in
     python3
   ];
 
-  programs.tmux = {
-    enable = true;
-
-    clock24 = true;
-    mouse = false;
-
-    plugins = with pkgs.tmuxPlugins; [
-      {
-        plugin = rose-pine;
-        extraConfig = ''
-          set -g @rose_pine_variant 'moon'
-        '';
-      }
-    ];
-  };
-
-  programs.git = {
-    enable = true;
-
-    userName = config.me.fullname;
-    userEmail = config.me.email;
-
-    signing = {
-      key = "FA5492BE76A4974A";
-      signByDefault = true;
-    };
-
-    extraConfig = {
-      core = {
-        editor = "hx";
-      };
-      init = {
-        defaultBranch = "main";
-      };
-    };
-  };
-
-  programs.starship = {
-    enable = true;
-
-    enableBashIntegration = true;
-
-    settings = {
-      add_newline = true;
-    };
-  };
-
   programs.zoxide = {
     enable = true;
 
@@ -110,6 +86,12 @@ in
 
     bashrcExtra = ''
 
+    '';
+
+    profileExtra = ''
+      if [[ $(tty) == /dev/tty1 ]]; then
+        exec Hyprland
+      fi
     '';
 
     shellAliases = {

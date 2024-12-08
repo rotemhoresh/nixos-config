@@ -65,6 +65,8 @@ in
     packages = with pkgs; [ ];
   };
 
+  services.getty.autologinUser = "rotemhoresh";
+
   nixpkgs.config.allowUnfree = true;
 
   # List packages installed in system profile. To search, run:
