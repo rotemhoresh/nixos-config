@@ -63,8 +63,11 @@ in
     which
 
     brightnessctl
+    pamixer
 
     nwg-look
+
+    mdbook
 
     stremio
     spotify
@@ -87,6 +90,15 @@ in
 
     python3
   ];
+
+  services.avizo = {
+    enable = true;
+    settings = {
+      default = {
+        time = 2;
+      };
+    };
+  };
 
   programs.zoxide = {
     enable = true;

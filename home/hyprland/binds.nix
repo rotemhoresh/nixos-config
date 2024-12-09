@@ -43,8 +43,14 @@
       "$mainMod SHIFT, 0, movetoworkspace, 10"
 
       # Control brightness
-      ", XF86MonBrightnessUp, exec, brightnessctl set 5%+"
-      ", XF86MonBrightnessDown, exec, brightnessctl set 5%-"
+      ", XF86MonBrightnessUp, exec, lightctl up"
+      ", XF86MonBrightnessDown, exec, lightctl down"
+
+      # Control volume
+      ", XF86AudioRaiseVolume, exec, volumectl -u up"
+      ", XF86AudioLowerVolume, exec, volumectl -u down"
+      ", XF86AudioMute, exec, volumectl toggle-mute"
+      ", XF86AudioMicMute, exec, volumectl -m toggle-mute"
 
       "$mainMod, Q, exec, $terminal"
       "$mainMod, R, exec, $menu"
