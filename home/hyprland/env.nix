@@ -1,8 +1,12 @@
 {
   wayland.windowManager.hyprland.settings = {
     env = [
-      "XCURSOR_SIZE, 24"
-      "HYPRCURSOR_SIZE, 24"
+      # Try to force stuff to run on wayland
+      "GDK_BACKEND, wayland,x11,*"
+      "QT_QPA_PLATFORM, wayland;xcb"
+      "SDL_VIDEODRIVER, wayland"
+      "CLUTTER_BACKEND, wayland"
+      "NIXOS_OZONE_WL, 1"
     ];
   };
 }

@@ -65,7 +65,7 @@ in
     packages = with pkgs; [ ];
   };
 
-  services.getty.autologinUser = "rotemhoresh";
+  # services.getty.autologinUser = "rotemhoresh";
 
   nixpkgs.config.allowUnfree = true;
 

@@ -26,7 +26,7 @@
       blur = {
         enabled = true;
         size = 3;
-        passes = 1;
+        passes = 3;
 
         vibrancy = 0.1696;
       };

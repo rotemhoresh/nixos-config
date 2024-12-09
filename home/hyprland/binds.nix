@@ -42,9 +42,13 @@
       "$mainMod SHIFT, 9, movetoworkspace, 9"
       "$mainMod SHIFT, 0, movetoworkspace, 10"
 
+      # Control brightness
+      ", XF86MonBrightnessUp, exec, brightnessctl set 5%+"
+      ", XF86MonBrightnessDown, exec, brightnessctl set 5%-"
+
       "$mainMod, Q, exec, $terminal"
       "$mainMod, R, exec, $menu"
-      
+
       "$mainMod, V, exec, alacritty --class clipse -e 'clipse'"
     ];
   };

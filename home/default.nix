@@ -28,7 +28,12 @@ in
     email = conf.me.email;
   };
 
-  hyprland.enable = true;
+  hyprland = {
+    enable = true;
+    wallpaper = "dark-splashes.png";
+    hcursor = "bibata-modern-classic-hyprcursor";
+    xcursor = "bibata-modern-classic-xcursor";
+  };
 
   helix.enable = true;
 
@@ -49,9 +54,17 @@ in
     jq
     sqlite
 
+    # TODO: delete me
+    librsvg
+    xorg.xcursorgen
+
     # misc
     neofetch
     which
+
+    brightnessctl
+
+    nwg-look
 
     stremio
     spotify
@@ -67,6 +80,8 @@ in
 
     nixd
     nixfmt-rfc-style
+
+    vscode-langservers-extracted
 
     taplo
 
@@ -88,11 +103,11 @@ in
 
     '';
 
-    profileExtra = ''
-      if [[ $(tty) == /dev/tty1 ]]; then
-        exec Hyprland
-      fi
-    '';
+    # profileExtra = ''
+    #   if [[ $(tty) == /dev/tty1 ]]; then
+    #     exec Hyprland
+    #   fi
+    # '';
 
     shellAliases = {
       h = "hx .";

@@ -14,6 +14,7 @@ in
     ./autostart.nix
 
     ./hyprpaper.nix
+    ./hyprcursor.nix
   ];
 
   options.hyprland = {
