@@ -6,7 +6,7 @@
 
       border_size = 2;
 
-      "col.active_border" = "rgba(33ccffee) rgba(00ff99ee) 45deg";
+      "col.active_border" = "rgba(9ccfd8ee)";
       "col.inactive_border" = "rgba(595959aa)";
     };
 
@@ -21,7 +21,7 @@
         range = 15;
         render_power = 3;
         offset = "0, 0";
-        color = "rgba(1a1a1aee)";
+        color = "rgba(9ccfd8ee)";
       };
 
       blur = {
