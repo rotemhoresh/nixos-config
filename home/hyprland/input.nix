@@ -1,7 +1,12 @@
 {
   wayland.windowManager.hyprland.settings = {
     input = {
+      kb_layout = "us,he";
+      kb_variant = ",qwerty";
+
       kb_options = [
+        "grp:alt_shift_toggle"
+
         "caps:swapescape"
       ];
 
