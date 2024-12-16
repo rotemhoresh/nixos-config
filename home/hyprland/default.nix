@@ -17,6 +17,8 @@ in {
     ./hyprpaper.nix
     ./hyprcursor.nix
     ./hyprsunset.nix
+
+    ./rose-pine-moon.nix
   ];
 
   options.hyprland = {

@@ -6,8 +6,8 @@
 
       border_size = 2;
 
-      "col.active_border" = "rgba(3e8fb0ee)";
-      "col.inactive_border" = "rgba(393552aa)";
+      "col.active_border" = "$foam";
+      "col.inactive_border" = "$overlay";
     };
 
     decoration = {
@@ -21,8 +21,8 @@
         range = 15;
         render_power = 3;
         offset = "0, 0";
-        color = "rgba(3e8fb0ee)";
-        color_inactive = "rgba(393552aa)";
+        color = "$foam";
+        color_inactive = "$muted";
       };
 
       blur = {

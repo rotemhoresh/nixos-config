@@ -46,6 +46,8 @@ in {
     jq
     sqlite
 
+    kitty
+
     gcc
 
     sqlx-cli
