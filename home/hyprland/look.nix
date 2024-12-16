@@ -6,8 +6,8 @@
 
       border_size = 2;
 
-      "col.active_border" = "rgba(9ccfd8ee)";
-      "col.inactive_border" = "rgba(595959aa)";
+      "col.active_border" = "rgba(3e8fb0ee)";
+      "col.inactive_border" = "rgba(393552aa)";
     };
 
     decoration = {
@@ -21,7 +21,8 @@
         range = 15;
         render_power = 3;
         offset = "0, 0";
-        color = "rgba(9ccfd8ee)";
+        color = "rgba(3e8fb0ee)";
+        color_inactive = "rgba(393552aa)";
       };
 
       blur = {
