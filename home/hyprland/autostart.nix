@@ -4,7 +4,6 @@
       "waybar"
       "clipse -listen" # clipboard
       "hyprpaper" # wallpaper
-      "hyprsunset" # blue light filter
     ];
   };
 }

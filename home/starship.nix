@@ -1,9 +1,10 @@
-{ lib, config, ... }:
-
-let
-  cfg = config.starship;
-in
 {
+  lib,
+  config,
+  ...
+}: let
+  cfg = config.starship;
+in {
   options.starship = {
     enable = lib.mkEnableOption "Startship";
   };

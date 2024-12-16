@@ -1,9 +1,10 @@
-{ lib, config, ... }:
-
-let
-  cfg = config.hyprland;
-in
 {
+  lib,
+  config,
+  ...
+}: let
+  cfg = config.hyprland;
+in {
   options.hyprland = {
     wallpaper = lib.mkOption {
       type = lib.types.str;

@@ -1,9 +1,6 @@
-{ pkgs, ... }:
-
-let
+{pkgs, ...}: let
   conf = import ../config.nix;
-in
-{
+in {
   imports = [
     ./fonts.nix
     ./alacritty.nix
@@ -30,7 +27,8 @@ in
 
   hyprland = {
     enable = true;
-    wallpaper = "dark-splashes.png";
+    hyprsunset = true;
+    wallpaper = "sunflower.png";
     hcursor = "bibata-modern-classic-hyprcursor";
     xcursor = "bibata-modern-classic-xcursor";
   };
@@ -54,6 +52,19 @@ in
     jq
     sqlite
 
+    gcc
+
+    (fenix.complete.withComponents [
+      "cargo"
+      "clippy"
+      "rust-src"
+      "rustc"
+      "rustfmt"
+    ])
+    rust-analyzer-nightly
+
+    sqlx-cli
+
     # TODO: delete me
     librsvg
     xorg.xcursorgen
@@ -61,6 +72,7 @@ in
     # misc
     neofetch
     which
+    cowsay
 
     brightnessctl
     pamixer
@@ -73,7 +85,7 @@ in
     spotify
     discord
 
-    hyprsunset
+    gparted
 
     gnupg
 
@@ -81,8 +93,12 @@ in
 
     yaml-language-server
 
+    marksman
+    markdown-oxide
+
     nixd
     nixfmt-rfc-style
+    alejandra
 
     vscode-langservers-extracted
 
@@ -123,6 +139,7 @@ in
 
     shellAliases = {
       h = "hx .";
+      sudoh = "sudo hx .";
     };
   };
 

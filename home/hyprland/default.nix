@@ -1,9 +1,10 @@
-{ lib, config, ... }:
-
-let
-  cfg = config.hyprland;
-in
 {
+  lib,
+  config,
+  ...
+}: let
+  cfg = config.hyprland;
+in {
   imports = [
     ./binds.nix
     ./rules.nix
@@ -15,6 +16,7 @@ in
 
     ./hyprpaper.nix
     ./hyprcursor.nix
+    ./hyprsunset.nix
   ];
 
   options.hyprland = {

@@ -3,12 +3,9 @@
   lib,
   config,
   ...
-}:
-
-let
+}: let
   cfg = config.go;
-in
-{
+in {
   options.go = {
     enable = lib.mkEnableOption "Go";
   };

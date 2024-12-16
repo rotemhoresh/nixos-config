@@ -3,12 +3,9 @@
   config,
   pkgs,
   ...
-}:
-
-let
+}: let
   cfg = config.helix;
-in
-{
+in {
   options.helix = {
     enable = lib.mkEnableOption "Helix Editor";
   };
@@ -31,7 +28,7 @@ in
       themes = {
         my_theme = {
           inherits = "rose_pine_moon";
-          "ui.background" = { };
+          "ui.background" = {};
         };
       };
 
@@ -47,7 +44,7 @@ in
               "nixd"
             ];
             formatter = {
-              command = "nixfmt";
+              command = "alejandra";
             };
             auto-format = true;
           }

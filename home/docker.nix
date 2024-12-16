@@ -3,12 +3,9 @@
   lib,
   config,
   ...
-}:
-
-let
+}: let
   cfg = config.docker;
-in
-{
+in {
   options.docker = {
     enable = lib.mkEnableOption "Docker";
   };

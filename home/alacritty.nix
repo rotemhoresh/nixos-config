@@ -1,9 +1,10 @@
-{ lib, config, ... }:
-
-let
-  cfg = config.alacritty;
-in
 {
+  lib,
+  config,
+  ...
+}: let
+  cfg = config.alacritty;
+in {
   options.alacritty = {
     enable = lib.mkEnableOption "Alacritty";
   };
@@ -18,7 +19,7 @@ in
         };
 
         window = {
-          opacity = 0.6;
+          opacity = 0.7;
         };
       };
     };
