@@ -24,7 +24,6 @@ in {
     name = conf.me.fullname;
     email = conf.me.email;
   };
-
   hyprland = {
     enable = true;
     hyprsunset = true;
@@ -32,17 +31,12 @@ in {
     hcursor = "bibata-modern-classic-hyprcursor";
     xcursor = "bibata-modern-classic-xcursor";
   };
-
   helix.enable = true;
-
   go.enable = true;
-
+  rust.enable = true;
   docker.enable = true;
-
   alacritty.enable = true;
-
   starship.enable = true;
-
   tmux.enable = true;
 
   home.packages = with pkgs; [
@@ -53,15 +47,6 @@ in {
     sqlite
 
     gcc
-
-    (fenix.complete.withComponents [
-      "cargo"
-      "clippy"
-      "rust-src"
-      "rustc"
-      "rustfmt"
-    ])
-    rust-analyzer-nightly
 
     sqlx-cli
 
