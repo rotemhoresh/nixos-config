@@ -1,8 +1,13 @@
 {
   wayland.windowManager.hyprland.settings = {
     input = {
+      kb_layout = "us,he";
+      kb_variant = "";
+
       kb_options = [
         "caps:swapescape"
+
+        "grp:win_space_toggle"
       ];
 
       repeat_rate = 40; # per second

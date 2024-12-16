@@ -6,6 +6,7 @@
       "$mainMod, C, killactive"
       "$mainMod, M, exit"
       "$mainMod, T, togglesplit"
+      "$mainMod, F, fullscreen, 0"
 
       # Windows focus navigation
       "$mainMod, H, movefocus, l"

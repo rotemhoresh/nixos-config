@@ -18,17 +18,16 @@
 
       shadow = {
         enabled = true;
-        range = 4;
+        range = 15;
         render_power = 3;
+        offset = "0, 0";
         color = "rgba(1a1a1aee)";
       };
 
       blur = {
         enabled = true;
-        size = 3;
-        passes = 3;
-
-        vibrancy = 0.1696;
+        size = 8;
+        passes = 2;
       };
     };
 
