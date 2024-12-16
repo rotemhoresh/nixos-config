@@ -45,8 +45,9 @@ in {
 
   # Configure keymap in X11
   services.xserver.xkb = {
-    layout = "us";
+    layout = "us,he";
     variant = "";
+    options = "grp:win_space_toggle";
   };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
