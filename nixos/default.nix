@@ -64,6 +64,8 @@ in {
 
   # services.getty.autologinUser = "rotemhoresh";
 
+  security.pam.services.hyprlock = {};
+
   nixpkgs.config.allowUnfree = true;
 
   # List packages installed in system profile. To search, run:
