@@ -30,10 +30,5 @@ in {
     # thus making them disabled if the this module is disabled.
     wayland.windowManager.hyprland.enable = true;
     services.hyprpaper.enable = true;
-    programs.hyprlock = {
-      enable = true;
-      extraConfig = ''
-      '';
-    };
   };
 }
