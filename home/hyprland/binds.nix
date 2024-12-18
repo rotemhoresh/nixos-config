@@ -53,6 +53,11 @@
       ", XF86AudioMute, exec, volumectl toggle-mute"
       ", XF86AudioMicMute, exec, volumectl -m toggle-mute"
 
+      # Take screenshots using Hyprshot
+      "$mainMod, PRINT, exec, hyprshot -m window"
+      ", PRINT, exec, hyprshot -m output"
+      "$mainMod SHIFT, PRINT, exec, hyprshot -m region"
+
       "$mainMod, Q, exec, $terminal"
       "$mainMod, R, exec, $menu"
 

@@ -50,6 +50,14 @@ in {
     jq
     sqlite
 
+    # screenshots
+    grim
+    slurp
+    hyprpicker
+    hyprshot
+
+    libnotify
+
     kitty
 
     gcc
