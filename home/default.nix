@@ -48,6 +48,7 @@ in {
     ripgrep
     fzf
     jq
+    unrar
     sqlite
 
     # screenshots
