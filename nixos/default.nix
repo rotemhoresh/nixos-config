@@ -29,18 +29,20 @@ in {
   time.timeZone = "Asia/Jerusalem";
 
   # Select internationalisation properties.
-  i18n.defaultLocale = "en_US.UTF-8";
+  i18n.defaultLocale = "en_IL/UTF-8";
+
+  i18n.supportedLocales = ["en_IL/UTF-8" "he_IL.UTF-8/UTF-8"];
 
   i18n.extraLocaleSettings = {
-    LC_ADDRESS = "en_IL";
-    LC_IDENTIFICATION = "en_IL";
-    LC_MEASUREMENT = "en_IL";
-    LC_MONETARY = "en_IL";
-    LC_NAME = "en_IL";
-    LC_NUMERIC = "en_IL";
-    LC_PAPER = "en_IL";
-    LC_TELEPHONE = "en_IL";
-    LC_TIME = "en_IL";
+    LC_ADDRESS = "en_IL/UTF-8";
+    LC_IDENTIFICATION = "en_IL/UTF-8";
+    LC_MEASUREMENT = "en_IL/UTF-8";
+    LC_MONETARY = "en_IL/UTF-8";
+    LC_NAME = "en_IL/UTF-8";
+    LC_NUMERIC = "en_IL/UTF-8";
+    LC_PAPER = "en_IL/UTF-8";
+    LC_TELEPHONE = "en_IL/UTF-8";
+    LC_TIME = "en_IL/UTF-8";
   };
 
   # Configure keymap in X11
