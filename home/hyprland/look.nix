@@ -15,7 +15,7 @@
     decoration = {
       rounding = 10;
 
-      active_opacity = 0.7;
+      active_opacity = 0.85;
       inactive_opacity = 0.7;
 
       shadow = {
