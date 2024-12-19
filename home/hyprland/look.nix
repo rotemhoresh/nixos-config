@@ -7,22 +7,24 @@
       border_size = 2;
 
       "col.active_border" = "$foam";
-      "col.inactive_border" = "$overlay";
+      "col.inactive_border" = "$highlightHigh";
+
+      layout = "dwindle";
     };
 
     decoration = {
       rounding = 10;
 
-      active_opacity = 1.0;
-      inactive_opacity = 1.0;
+      active_opacity = 0.7;
+      inactive_opacity = 0.7;
 
       shadow = {
         enabled = true;
-        range = 15;
+        range = 10;
         render_power = 3;
         offset = "0, 0";
         color = "$foam";
-        color_inactive = "$muted";
+        color_inactive = "0xff$base";
       };
 
       blur = {
