@@ -6,7 +6,7 @@
 
       border_size = 2;
 
-      "col.active_border" = "$foam";
+      "col.active_border" = "$gold";
       "col.inactive_border" = "$highlightHigh";
 
       layout = "dwindle";
@@ -23,7 +23,7 @@
         range = 10;
         render_power = 3;
         offset = "0, 0";
-        color = "$foam";
+        color = "$gold";
         color_inactive = "0xff$base";
       };
 
