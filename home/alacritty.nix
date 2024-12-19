@@ -17,10 +17,6 @@ in {
         font = {
           size = 12;
         };
-
-        window = {
-          opacity = 0.7;
-        };
       };
     };
   };
