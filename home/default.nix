@@ -103,7 +103,8 @@ in {
 
     taplo
 
-    python3
+    python312
+    python312Packages.python-lsp-server
   ];
 
   services.avizo = {
