@@ -20,6 +20,9 @@ in {
         "rustfmt"
       ])
       rust-analyzer-nightly
+
+      cargo-expand
+      cargo-watch
     ];
   };
 }

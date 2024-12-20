@@ -33,8 +33,11 @@ in {
       };
 
       languages = {
-        language-server.nixd = with pkgs; {
-          command = "${nixd}/bin/nixd";
+        language-server = {
+          rust-analyzer.config.check.command = "clippy";
+          nixd = with pkgs; {
+            command = "${nixd}/bin/nixd";
+          };
         };
 
         language = [
