@@ -59,6 +59,8 @@ in {
     hyprpicker
     hyprshot
 
+    rofi-wayland
+
     libnotify
 
     gcc

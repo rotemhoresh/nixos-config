@@ -61,7 +61,7 @@
       "$mainMod, Q, exec, $terminal"
       "$mainMod, R, exec, $menu"
 
-      "$mainMod, V, exec, alacritty --class clipse -e 'clipse'"
+      "$mainMod, V, exec, $terminal --class clipse -e 'clipse'"
     ];
   };
 }
