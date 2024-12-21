@@ -1,6 +1,6 @@
 {
   wayland.windowManager.hyprland.settings = {
-    "$terminal" = "alacritty";
+    "$terminal" = "kitty";
     "$menu" = "wofi --show drun";
   };
 }
