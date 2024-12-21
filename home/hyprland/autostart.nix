@@ -3,7 +3,7 @@
     exec-once = [
       "waybar"
       "clipse -listen" # clipboard
-      "hyprpaper" # wallpaper
+      "hyprpaper" # wallpapers
     ];
   };
 }

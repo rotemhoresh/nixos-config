@@ -1,70 +1,32 @@
 warning: Git tree '/home/rotemhoresh/nixos-config' is dirty
 building the system configuration...
 warning: Git tree '/home/rotemhoresh/nixos-config' is dirty
-these 9 derivations will be built:
-  /nix/store/1w16z01i8jsjq1hax6bzvd8x23m2hpy7-home-manager-path.drv
-  /nix/store/ndglk1y980qb30h2pcyjbrymli2d7q7d-hm_fontconfigconf.d10hmfonts.conf.drv
-  /nix/store/nns1qjpwq8nas216lbn8lczyc93hs2dd-home-manager-files.drv
-  /nix/store/d9m0pbyx3gdv5hc3kz5hkm16an39174a-home-manager-generation.drv
-  /nix/store/6xxsncn5nkyvawiil5diz7rh1p0fqk3r-unit-home-manager-rotemhoresh.service.drv
-  /nix/store/ff5080k23f9dxg7lpb70rb4bh1kdp7si-user-environment.drv
-  /nix/store/mfvwgvdqzx5hiajyh9846bfak7y3hmh7-system-units.drv
-  /nix/store/q1xp35wnxmfxwg47jmcy5cc6bpm3dca7-etc.drv
-  /nix/store/zy9164cbc9rfgkabr6sv7p7wlkxl6jfs-nixos-system-nixos-25.05.20241201.ac35b10.drv
-building '/nix/store/1w16z01i8jsjq1hax6bzvd8x23m2hpy7-home-manager-path.drv'...
-building '/nix/store/ndglk1y980qb30h2pcyjbrymli2d7q7d-hm_fontconfigconf.d10hmfonts.conf.drv'...
-building '/nix/store/ff5080k23f9dxg7lpb70rb4bh1kdp7si-user-environment.drv'...
-building '/nix/store/nns1qjpwq8nas216lbn8lczyc93hs2dd-home-manager-files.drv'...
-building '/nix/store/d9m0pbyx3gdv5hc3kz5hkm16an39174a-home-manager-generation.drv'...
-building '/nix/store/6xxsncn5nkyvawiil5diz7rh1p0fqk3r-unit-home-manager-rotemhoresh.service.drv'...
-building '/nix/store/mfvwgvdqzx5hiajyh9846bfak7y3hmh7-system-units.drv'...
-building '/nix/store/q1xp35wnxmfxwg47jmcy5cc6bpm3dca7-etc.drv'...
-building '/nix/store/zy9164cbc9rfgkabr6sv7p7wlkxl6jfs-nixos-system-nixos-25.05.20241201.ac35b10.drv'...
-stopping the following units: audit.service, bluetooth.service, kmod-static-nodes.service, logrotate-checkconf.service, mount-pstore.service, network-local-commands.service, network-setup.service, NetworkManager-wait-online.service, NetworkManager.service, nscd.service, resolvconf.service, systemd-modules-load.service, systemd-oomd.service, systemd-oomd.socket, systemd-sysctl.service, systemd-timesyncd.service, systemd-tmpfiles-resetup.service, systemd-udevd-control.socket, systemd-udevd-kernel.socket, systemd-udevd.service
-NOT restarting the following changed units: getty@tty1.service, systemd-backlight@backlight:intel_backlight.service, systemd-backlight@leds:asus::kbd_backlight.service, systemd-fsck@dev-disk-by\x2duuid-EA4C\x2dB34D.service, systemd-journal-flush.service, systemd-logind.service, systemd-random-seed.service, systemd-remount-fs.service, systemd-update-utmp.service, systemd-user-sessions.service, user-runtime-dir@1000.service, user@1000.service
+these 12 derivations will be built:
+  /nix/store/fzmbw96g1w57xy7j1asan1jkrw7bl01z-hm_kittykitty.conf.drv
+  /nix/store/07kapl7p081cgz3z9wzs52vccs58v4jl-activation-script.drv
+  /nix/store/7w7rsslhjyhnlvv554hhs45jvly3mzca-home-manager-path.drv
+  /nix/store/ydlja3j7k0ji714dhx616k6q6kngv40y-hm_fontconfigconf.d10hmfonts.conf.drv
+  /nix/store/zaxadj5hkkxw3wzbknr6dfyzfqp825zn-bashrc.drv
+  /nix/store/b6nwmjkk9ixcwhsxwaccqg9sm3ny5al6-home-manager-files.drv
+  /nix/store/f7qncfpvfkyk2ih8vp9lbfgnq9ifha5h-home-manager-generation.drv
+  /nix/store/nnlfq1kcp1xa0rz9rn4xsd21f646d9jq-unit-home-manager-rotemhoresh.service.drv
+  /nix/store/cdl0a24fpmfa0d5b1lah8xp3glfhx699-system-units.drv
+  /nix/store/nvwgn4ws88ia33wviyrphnkcyxbs8ls3-user-environment.drv
+  /nix/store/djg985kpszicf04191yj3qppzwnncjr7-etc.drv
+  /nix/store/zs4mc0r5797yqqjswr3vi6yqky48sr6p-nixos-system-nixos-25.05.20241201.ac35b10.drv
+building '/nix/store/7w7rsslhjyhnlvv554hhs45jvly3mzca-home-manager-path.drv'...
+building '/nix/store/zaxadj5hkkxw3wzbknr6dfyzfqp825zn-bashrc.drv'...
+building '/nix/store/fzmbw96g1w57xy7j1asan1jkrw7bl01z-hm_kittykitty.conf.drv'...
+building '/nix/store/07kapl7p081cgz3z9wzs52vccs58v4jl-activation-script.drv'...
+building '/nix/store/ydlja3j7k0ji714dhx616k6q6kngv40y-hm_fontconfigconf.d10hmfonts.conf.drv'...
+building '/nix/store/nvwgn4ws88ia33wviyrphnkcyxbs8ls3-user-environment.drv'...
+building '/nix/store/b6nwmjkk9ixcwhsxwaccqg9sm3ny5al6-home-manager-files.drv'...
+building '/nix/store/f7qncfpvfkyk2ih8vp9lbfgnq9ifha5h-home-manager-generation.drv'...
+building '/nix/store/nnlfq1kcp1xa0rz9rn4xsd21f646d9jq-unit-home-manager-rotemhoresh.service.drv'...
+building '/nix/store/cdl0a24fpmfa0d5b1lah8xp3glfhx699-system-units.drv'...
+building '/nix/store/djg985kpszicf04191yj3qppzwnncjr7-etc.drv'...
+building '/nix/store/zs4mc0r5797yqqjswr3vi6yqky48sr6p-nixos-system-nixos-25.05.20241201.ac35b10.drv'...
 activating the configuration...
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_CTYPE = (unset),
-	LC_NUMERIC = "en_IL/UTF-8",
-	LC_COLLATE = (unset),
-	LC_TIME = "en_IL/UTF-8",
-	LC_MESSAGES = (unset),
-	LC_MONETARY = "en_IL/UTF-8",
-	LC_ADDRESS = "en_IL/UTF-8",
-	LC_IDENTIFICATION = "en_IL/UTF-8",
-	LC_MEASUREMENT = "en_IL/UTF-8",
-	LC_PAPER = "en_IL/UTF-8",
-	LC_TELEPHONE = "en_IL/UTF-8",
-	LC_NAME = "en_IL/UTF-8",
-	LANG = "en_IL/UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to the standard locale ("C").
 setting up /etc...
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_CTYPE = (unset),
-	LC_NUMERIC = "en_IL/UTF-8",
-	LC_COLLATE = (unset),
-	LC_TIME = "en_IL/UTF-8",
-	LC_MESSAGES = (unset),
-	LC_MONETARY = "en_IL/UTF-8",
-	LC_ADDRESS = "en_IL/UTF-8",
-	LC_IDENTIFICATION = "en_IL/UTF-8",
-	LC_MEASUREMENT = "en_IL/UTF-8",
-	LC_PAPER = "en_IL/UTF-8",
-	LC_TELEPHONE = "en_IL/UTF-8",
-	LC_NAME = "en_IL/UTF-8",
-	LANG = "en_IL/UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to the standard locale ("C").
 reloading user units for rotemhoresh...
 restarting sysinit-reactivation.target
-reloading the following units: dbus.service, firewall.service, reload-systemd-vconsole-setup.service
-restarting the following units: nix-daemon.service, polkit.service, systemd-journald.service
-starting the following units: audit.service, bluetooth.service, kmod-static-nodes.service, logrotate-checkconf.service, mount-pstore.service, network-local-commands.service, network-setup.service, NetworkManager-wait-online.service, NetworkManager.service, nscd.service, resolvconf.service, systemd-modules-load.service, systemd-oomd.socket, systemd-sysctl.service, systemd-timesyncd.service, systemd-tmpfiles-resetup.service, systemd-udevd-control.socket, systemd-udevd-kernel.socket
-the following new units were started: NetworkManager-dispatcher.service, systemd-hostnamed.service

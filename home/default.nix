@@ -4,6 +4,7 @@ in {
   imports = [
     ./fonts.nix
     ./alacritty.nix
+    ./kitty.nix
     ./helix.nix
     ./git.nix
     ./starship.nix
@@ -36,6 +37,7 @@ in {
   rust.enable = true;
   docker.enable = true;
   alacritty.enable = true;
+  kitty.enable = true;
   starship.enable = true;
   tmux.enable = true;
 
@@ -58,8 +60,6 @@ in {
     hyprshot
 
     libnotify
-
-    kitty
 
     gcc
 
