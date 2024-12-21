@@ -79,6 +79,12 @@ in {
         enable_audio_bell = false;
       };
 
+      shellIntegration = {
+        enableBashIntegration = true;
+
+        mode = "no-rc no-cursor";
+      };
+
       font = {
         package = pkgs.nerd-fonts.jetbrains-mono;
         name = "JetBrainsMono Regular";
