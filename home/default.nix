@@ -28,7 +28,7 @@ in {
   hyprland = {
     enable = true;
     hyprsunset = true;
-    wallpaper = "sunflower.png";
+    wallpaper = "space.jpg";
     hcursor = "bibata-modern-classic-hyprcursor";
     xcursor = "bibata-modern-classic-xcursor";
   };

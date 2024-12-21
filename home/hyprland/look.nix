@@ -6,7 +6,7 @@
 
       border_size = 2;
 
-      "col.active_border" = "$gold";
+      "col.active_border" = "$pine";
       "col.inactive_border" = "$highlightHigh";
 
       layout = "dwindle";
@@ -16,14 +16,14 @@
       rounding = 10;
 
       active_opacity = 0.85;
-      inactive_opacity = 0.7;
+      inactive_opacity = 0.85;
 
       shadow = {
         enabled = true;
         range = 10;
         render_power = 3;
         offset = "0, 0";
-        color = "$gold";
+        color = "$pine";
         color_inactive = "0xff$base";
       };
 
