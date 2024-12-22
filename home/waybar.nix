@@ -193,7 +193,7 @@ in {
             };
           };
           "clock" = {
-            "format" = "  {=%d %b     %H=%M}";
+            "format" = "  {:%d %b     %H:%M}";
           };
           "pulseaudio" = {
             "format" = "{icon} {volume}%";
