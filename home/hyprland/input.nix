@@ -1,7 +1,14 @@
 {
   wayland.windowManager.hyprland.settings = {
     input = {
+      # kb_layout = "us,il";
+      # kb_variant = "";
+      # kb_model = "";
+      # kb_rules = "";
+
       kb_options = [
+        # "grp:alt_shift_toggle"
+
         "caps:swapescape"
       ];
 

@@ -44,10 +44,14 @@ in {
   };
 
   # Configure keymap in X11
-  services.xserver.xkb = {
-    layout = "us,il";
-    variant = "";
-    options = "grp:alt_shift_toggle";
+  services.xserver = {
+    # enable = true;
+    # exportConfiguration = true;
+    xkb = {
+      layout = "us,il";
+      variant = "";
+      options = "grp:alt_shift_toggle";
+    };
   };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
