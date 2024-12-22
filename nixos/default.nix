@@ -62,6 +62,11 @@ in {
     packages = with pkgs; [];
   };
 
+  # Battery goodies
+  powerManagement.enable = true;
+  services.thermald.enable = true;
+  services.tlp.enable = true;
+
   virtualisation.virtualbox.host.enable = true;
   users.extraGroups.vboxusers.members = ["rotemhoresh"];
 

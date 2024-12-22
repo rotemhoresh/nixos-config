@@ -16,6 +16,8 @@ in {
     ./go.nix
     ./rust.nix
     ./docker.nix
+
+    ./batterysave.nix # should go last
   ];
 
   home.username = conf.me.username;
