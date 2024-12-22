@@ -8,6 +8,7 @@ in {
     ./helix.nix
     ./git.nix
     ./starship.nix
+    ./waybar.nix
     ./tmux.nix
 
     ./hyprland
@@ -32,6 +33,7 @@ in {
     hcursor = "bibata-modern-classic-hyprcursor";
     xcursor = "bibata-modern-classic-xcursor";
   };
+  waybar.enable = true;
   helix.enable = true;
   go.enable = true;
   rust.enable = true;
