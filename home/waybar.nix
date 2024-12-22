@@ -150,11 +150,15 @@ in {
             "window-rewrite-default" = " ";
             "show-special" = "true";
             "window-rewrite" = {
-              "title<.*youtube.*>" = " ";
+              "title<.*YouTube.*>" = " ";
               "class<firefox>" = " ";
               "class<clipse>" = " ";
               "title<Stremio - Freedom to Stream>" = "󰎁 ";
               "kitty" = " ";
+              "title<.*WhatsApp.*>" = " ";
+              "title<ChatGPT.*>" = " ";
+              "title<Microsoft Copilot: Your AI companion.*>" = " ";
+              "class<VirtualBox Machine>" = " ";
             };
           };
         }
