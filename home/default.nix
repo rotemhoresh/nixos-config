@@ -68,6 +68,8 @@ in {
 
     gcc
 
+    lsp-ai
+
     sqlx-cli
 
     # TODO: delete me
