@@ -8,7 +8,7 @@ A machine with the Nix operating system.
 
 #### Note
 
-Make sure that the configuration in the `nixos/hardware-config.nix` and the system definition in the `flake.nix` matches with your system (check your current configurations).
+Make sure that the configuration in the `nixos/hardware-configuration.nix` and the system definition in the `flake.nix` matches with your system (check your current configurations).
 
 ### Git
 
@@ -50,3 +50,24 @@ Finally, rebuild your system deploying the new configurations:
 # or, from anywhere:
 sudo nixos-rebuild switch
 ```
+
+## About
+
+### Scripts
+
+- `s`: A script that rebuilds the system. It does the following:
+  - Format all `.nix` files in the repo, using [alejandra](https://github.com/kamadorueda/alejandra), 
+  - Rebuild the system.
+  - Create a commit for the newly created generation.
+
+  Thanks: 
+  - [NoBoilerplate](https://www.youtube.com/c/NoBoilerplate)
+- `trim-generations.sh`: A script to streamline cleaning past system generations. I usually use it like this:
+  ```bash
+  sudo ./trim-generations.sh 5 0 system
+  ```
+  Which removes all past generations except the last 5.
+
+  Thanks:
+  - [NixOS Wiki](https://nixos.wiki/wiki/NixOS_Generations_Trimmer)
+  
