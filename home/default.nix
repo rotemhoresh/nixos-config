@@ -66,6 +66,8 @@ in {
 
     rofi-wayland
 
+    zoom-us
+
     libnotify
 
     gcc
