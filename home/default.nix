@@ -52,6 +52,7 @@ in {
     jq
     unrar
     sqlite
+    mdbook
 
     # screenshots
     grim
@@ -80,8 +81,6 @@ in {
     pamixer
 
     nwg-look
-
-    mdbook
 
     stremio
     spotify

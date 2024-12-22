@@ -62,6 +62,9 @@ in {
     packages = with pkgs; [];
   };
 
+  virtualisation.virtualbox.host.enable = true;
+  users.extraGroups.vboxusers.members = ["rotemhoresh"];
+
   # services.getty.autologinUser = "rotemhoresh";
 
   security.pam.services.hyprlock = {};
