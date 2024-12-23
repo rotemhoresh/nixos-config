@@ -217,6 +217,10 @@ in {
             "format-disabled" = "󰂲 ";
             "format-on" = "󰂯 ";
             "format-connected" = "{num_connections}󰂱 ";
+
+            "tooltip" = true;
+            "tooltip-format" = "{device_enumerate}";
+
             "on-click" = "bluetooth toggle";
           };
           "memory" = {
