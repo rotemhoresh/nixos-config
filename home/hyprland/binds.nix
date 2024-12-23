@@ -3,6 +3,9 @@
     "$mainMod" = "SUPER";
 
     bind = [
+      # Something shity
+      "ALT SHIFT, exec hyprctl switchxkblayout at-translated-set-2-keyboard next"
+
       "$mainMod, C, killactive"
       "$mainMod, M, exit"
       "$mainMod, T, togglesplit"
