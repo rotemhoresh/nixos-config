@@ -69,6 +69,8 @@ in {
     libnotify
 
     zoom-us
+    xdg-desktop-portal
+    xdg-desktop-portal-kde
 
     gcc
 
