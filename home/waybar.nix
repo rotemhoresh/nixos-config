@@ -48,6 +48,10 @@ in {
           color: @muted;
         }
 
+        #workspaces button:hover {
+          background: none;
+        }
+
         #workspaces button.active {
           color: @text;
         }
