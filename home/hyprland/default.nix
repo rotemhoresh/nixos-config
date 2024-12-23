@@ -14,6 +14,7 @@ in {
     ./vars.nix
     ./autostart.nix
 
+    # ./pyprland.nix
     ./hyprpaper.nix
     ./hyprcursor.nix
     ./hyprsunset.nix

@@ -1,10 +1,12 @@
 {
-  description = "My NixOS, flakes and home-manager configuration";
+  description = "My system config";
 
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
 
     hyprland.url = "github:hyprwm/Hyprland";
+
+    pyprland.url = "github:hyprland-community/pyprland";
 
     home-manager = {
       url = "github:nix-community/home-manager";
