@@ -213,10 +213,11 @@ in {
             };
           };
           "bluetooth" = {
-            "format-off" = "";
-            "format-disabled" = "";
+            "format-off" = "󰂲 ";
+            "format-disabled" = "󰂲 ";
             "format-on" = "󰂯 ";
-            "format-connected" = "󰂱 ";
+            "format-connected" = "{num_connections}󰂱 ";
+            "on-click" = "bluetooth toggle";
           };
           "memory" = {
             "format" = "󰍛 {}%";
