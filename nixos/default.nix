@@ -48,11 +48,12 @@ in {
     # enable = true;
     # exportConfiguration = true;
     xkb = {
-      layout = "us,il";
+      layout = "us";
       variant = "";
-      options = "grp:alt_shift_toggle";
     };
   };
+
+  hardware.keyboard.qmk.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.${config.me.username} = {
