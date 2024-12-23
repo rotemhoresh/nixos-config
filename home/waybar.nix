@@ -52,6 +52,11 @@ in {
           background: none;
         }
 
+        #workspaces button.focused {
+          background-color: transparent;
+          box-shadow: none;
+        }
+
         #workspaces button.active {
           color: @text;
         }
