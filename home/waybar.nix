@@ -50,6 +50,8 @@ in {
 
         #workspaces button:hover {
           background: none;
+          box-shadow: none;
+          text-shadow: none;
         }
 
         #workspaces button.focused {
