@@ -198,6 +198,7 @@ in {
           "hyprland/language" = {
             "format-en" = "en";
             "format-he" = "he";
+            "on-click" = "hyprctl switchxkblayout at-translated-set-2-keyboard next";
           };
           "hyprland/window" = {
             "rewrite" = {
