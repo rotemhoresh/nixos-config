@@ -68,6 +68,8 @@ in {
 
     libnotify
 
+    zoom-us
+
     gcc
 
     lsp-ai
