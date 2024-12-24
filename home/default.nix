@@ -52,6 +52,7 @@ in {
   home.packages = with pkgs; [
     # utils
     ripgrep
+    grex
     fzf
     jq
     unrar
