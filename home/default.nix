@@ -149,6 +149,7 @@ in {
     shellAliases = {
       h = "hx .";
       sudoh = "sudo hx .";
+      ll = "ls -lah";
     };
   };
 
