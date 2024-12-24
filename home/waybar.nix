@@ -239,6 +239,7 @@ in {
             "format" = "󰍛 {}%";
           };
           "network#wifi" = {
+            "format" = "{iframe}";
             "format-icons" = [
               "󰤯 "
               "󰤟 "
@@ -248,6 +249,10 @@ in {
             ];
             "format-disconnected" = "󰤮 ";
             "format-wifi" = "{icon} {signalStrength}%";
+
+            "tooltip-format-wifi" = "{essid} ({signalStrength}%)";
+            "tooltip-format-disconnected" = "Disconnected"; # toggle WiFi on click
+            "on-click" = "nmcli radio wifi $(nmcli radio wifi | grep -q enabled && echo off || echo on)";
           };
           "battery" = {
             "states" = {
