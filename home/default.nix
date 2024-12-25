@@ -58,6 +58,7 @@ in {
     unrar
     sqlite
     mdbook
+    tree
 
     # screenshots
     grim
