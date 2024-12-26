@@ -55,14 +55,18 @@ in {
 
   home.packages = with pkgs; [
     # utils
-    ripgrep
-    grex
-    fzf
-    jq
+    ripgrep # recursive regex greping
+    grex # create regexps to match test cases
+    fzf # fuzzy finder
+    jq # CLI to do json stuff
     unrar
     sqlite
     mdbook
-    tree
+    tree # view dir structure
+    bat # print file content (like `cat`)
+    neofetch
+    which
+    cowsay
 
     # screenshots
     grim
@@ -83,11 +87,6 @@ in {
     # TODO: delete me
     librsvg
     xorg.xcursorgen
-
-    # misc
-    neofetch
-    which
-    cowsay
 
     brightnessctl
     pamixer
