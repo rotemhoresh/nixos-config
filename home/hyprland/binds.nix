@@ -63,6 +63,7 @@
 
       "$mainMod, Q, exec, $terminal"
       "$mainMod, R, exec, $menu"
+      "$mainMod, E, exec, $browser"
 
       "$mainMod, V, exec, $terminal --class clipse -e 'clipse'"
     ];
