@@ -151,6 +151,7 @@ in {
       h = "hx .";
       sudoh = "sudo hx .";
       ll = "ls -lah";
+      icat = "kitten icat";
     };
   };
 
