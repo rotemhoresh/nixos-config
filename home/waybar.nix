@@ -63,6 +63,10 @@ in {
           color: @text;
         }
 
+        #window {
+          padding: 0 20px;
+        }
+
         #memory,
         #network,
         #battery,
