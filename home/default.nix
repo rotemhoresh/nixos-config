@@ -49,6 +49,10 @@ in {
     enable = true;
   };
 
+  home.sessionPath = [
+    "$HOME/.cargo/bin"
+  ];
+
   home.packages = with pkgs; [
     # utils
     ripgrep
