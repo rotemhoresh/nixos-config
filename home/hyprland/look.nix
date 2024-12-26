@@ -30,7 +30,7 @@
       blur = {
         enabled = true;
         size = 8;
-        passes = 1;
+        passes = 3;
         noise = 0.05;
       };
     };
