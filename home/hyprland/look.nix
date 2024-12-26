@@ -29,8 +29,8 @@
 
       blur = {
         enabled = true;
-        size = 14;
-        passes = 3;
+        size = 10;
+        passes = 5;
       };
     };
 
