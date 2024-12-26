@@ -31,7 +31,7 @@ in {
   hyprland = {
     enable = true;
     hyprsunset = true;
-    wallpaper = "dots.jpg";
+    wallpaper = "cave.jpg";
     hcursor = "bibata-modern-classic-hyprcursor";
     xcursor = "bibata-modern-classic-xcursor";
   };
