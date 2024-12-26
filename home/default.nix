@@ -156,6 +156,7 @@ in {
       sudoh = "sudo hx .";
       ll = "ls -lah";
       icat = "kitten icat";
+      rl = "recall";
     };
   };
 
