@@ -13,6 +13,7 @@ in {
     ./look.nix
     ./vars.nix
     ./autostart.nix
+    ./submap.nix
 
     # ./pyprland.nix
     ./hyprpaper.nix
