@@ -46,31 +46,31 @@
 
         bind = , M, submap, move
         submap = move
-           bind = , 1, movetoworkspace, 1
-           bind = , 1, submap, reset
-           bind = , 2, movetoworkspace, 2
-           bind = , 2, submap, reset
-           bind = , 3, movetoworkspace, 3
-           bind = , 3, submap, reset
-           bind = , 4, movetoworkspace, 4
-           bind = , 4, submap, reset
-           bind = , 5, movetoworkspace, 5
-           bind = , 5, submap, reset
-           bind = , 6, movetoworkspace, 6
-           bind = , 6, submap, reset
-           bind = , 7, movetoworkspace, 7
-           bind = , 7, submap, reset
-           bind = , 8, movetoworkspace, 8
-           bind = , 8, submap, reset
-           bind = , 9, movetoworkspace, 9
-           bind = , 9, submap, reset
-           bind = , 0, movetoworkspace, 10
-           bind = , 0, submap, reset
+          bind = , 1, movetoworkspace, 1
+          bind = , 1, submap, reset
+          bind = , 2, movetoworkspace, 2
+          bind = , 2, submap, reset
+          bind = , 3, movetoworkspace, 3
+          bind = , 3, submap, reset
+          bind = , 4, movetoworkspace, 4
+          bind = , 4, submap, reset
+          bind = , 5, movetoworkspace, 5
+          bind = , 5, submap, reset
+          bind = , 6, movetoworkspace, 6
+          bind = , 6, submap, reset
+          bind = , 7, movetoworkspace, 7
+          bind = , 7, submap, reset
+          bind = , 8, movetoworkspace, 8
+          bind = , 8, submap, reset
+          bind = , 9, movetoworkspace, 9
+          bind = , 9, submap, reset
+          bind = , 0, movetoworkspace, 10
+          bind = , 0, submap, reset
 
-          bind = , escape, submap, reset
+          bind = , Escape, submap, reset
         submap = reset
 
-        bind = , escape, submap, reset
+        bind = , Escape, submap, reset
       submap = reset
 
       bind = , R, submap, resize
@@ -85,10 +85,10 @@
         binde = , K, resizeactive, 0 -10
         binde = , J, resizeactive, 0 10
 
-        bind = , escape, submap, reset
+        bind = , Escape, submap, reset
       submap = reset
 
-      bind = , escape, submap, reset
+      bind = , Escape, submap, reset
     submap = reset
   '';
 }
