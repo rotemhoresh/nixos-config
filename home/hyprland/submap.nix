@@ -68,10 +68,10 @@
           bind = , 0, submap, reset
 
           bind = , Escape, submap, reset
-        submap = reset
+        submap = goto
 
         bind = , Escape, submap, reset
-      submap = reset
+      submap = main
 
       bind = , R, submap, resize
       submap = resize
@@ -86,7 +86,7 @@
         binde = , J, resizeactive, 0 10
 
         bind = , Escape, submap, reset
-      submap = reset
+      submap = main
 
       bind = , Escape, submap, reset
     submap = reset
