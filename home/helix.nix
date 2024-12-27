@@ -67,7 +67,7 @@ in {
       };
 
       settings = {
-        theme = "my_theme";
+        theme = "rose_pine";
         editor = {
           line-number = "relative";
           mouse = false;

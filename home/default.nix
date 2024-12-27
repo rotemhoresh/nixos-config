@@ -153,6 +153,7 @@ in {
     shellAliases = {
       h = "hx .";
       sudoh = "sudo hx .";
+      ls = "ls --color=auto --hyperlink=auto";
       ll = "ls -lah";
       icat = "kitten icat";
       rl = "recall";
