@@ -9,7 +9,8 @@
       bind = , V, exec, $terminal --class clipse -e 'clipse'
 
       bind = , Q, exec, $terminal
-      bind = , R, exec, $menu
+      bind = , U, exec, $menu
+      bind = , U, submap, reset
       bind = , E, exec, $browser
 
       bind = , F, fullscreen, 0
