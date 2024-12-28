@@ -5,6 +5,7 @@
 
       # allow sending backslashes to windows by repeating
       bind = , backslash, pass,
+      bind = , backslash, submap, reset
 
       bind = , V, exec, $terminal --class clipse -e 'clipse'
 
