@@ -34,7 +34,7 @@ in {
   hyprland = {
     enable = true;
     hyprsunset = true;
-    wallpaper = "green-parrot.png";
+    wallpaper = "dark:small-white-bird.jpg";
     hcursor = "bibata-modern-classic-hyprcursor";
     xcursor = "bibata-modern-classic-xcursor";
   };
