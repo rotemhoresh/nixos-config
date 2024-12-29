@@ -8,10 +8,13 @@ in {
     ./helix.nix
     ./git.nix
     ./starship.nix
-    ./waybar.nix
     ./tmux.nix
+    ./zoxide.nix
+    ./bash.nix
 
     ./hyprland
+    ./waybar.nix
+    ./avizo.nix
 
     ./go.nix
     ./rust.nix
@@ -31,11 +34,12 @@ in {
   hyprland = {
     enable = true;
     hyprsunset = true;
-    wallpaper = "cave.jpg";
+    wallpaper = "green-parrot.png";
     hcursor = "bibata-modern-classic-hyprcursor";
     xcursor = "bibata-modern-classic-xcursor";
   };
   waybar.enable = true;
+  avizo.enable = true;
   helix.enable = true;
   go.enable = true;
   rust.enable = true;
@@ -44,6 +48,8 @@ in {
   kitty.enable = true;
   starship.enable = true;
   tmux.enable = true;
+  zoxide.enable = true;
+  bash.enable = true;
 
   programs.hyprlock = {
     enable = true;
@@ -54,7 +60,6 @@ in {
   ];
 
   home.packages = with pkgs; [
-    # utils
     ripgrep # recursive regex greping
     grex # create regexps to match test cases
     fzf # fuzzy finder
@@ -67,6 +72,8 @@ in {
     neofetch
     which
     cowsay
+    curl
+    ffmpeg
 
     # screenshots
     grim
@@ -79,8 +86,6 @@ in {
     libnotify
 
     gcc
-
-    lsp-ai
 
     sqlx-cli
 
@@ -104,61 +109,16 @@ in {
     lldb
 
     yaml-language-server
-
-    marksman
+    marksman # markdown
     markdown-oxide
-
     nixd
     nixfmt-rfc-style
-    alejandra
-
+    alejandra # nix formatter
     vscode-langservers-extracted
-
-    taplo
-
+    taplo # toml
     python312
     python312Packages.python-lsp-server
   ];
-
-  services.avizo = {
-    enable = true;
-    settings = {
-      default = {
-        time = 2;
-      };
-    };
-  };
-
-  programs.zoxide = {
-    enable = true;
-
-    enableBashIntegration = true;
-  };
-
-  programs.bash = {
-    enable = true;
-
-    enableCompletion = true;
-
-    bashrcExtra = ''
-
-    '';
-
-    # profileExtra = ''
-    #   if [[ $(tty) == /dev/tty1 ]]; then
-    #     exec Hyprland
-    #   fi
-    # '';
-
-    shellAliases = {
-      h = "hx .";
-      sudoh = "sudo hx .";
-      ls = "ls --color=auto --hyperlink=auto -F";
-      ll = "ls -lAh";
-      icat = "kitten icat";
-      rl = "recall";
-    };
-  };
 
   home.stateVersion = "24.11";
 
