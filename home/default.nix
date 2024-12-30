@@ -75,6 +75,8 @@ in {
     curl
     ffmpeg
 
+    ttyper
+
     # screenshots
     grim
     slurp
