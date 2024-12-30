@@ -88,6 +88,7 @@ in {
     libnotify
 
     gcc
+    lldb
 
     sqlx-cli
 
@@ -107,8 +108,6 @@ in {
     gparted
 
     gnupg
-
-    lldb
 
     yaml-language-server
     marksman # markdown

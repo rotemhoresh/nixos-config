@@ -75,23 +75,23 @@ in {
             80
           ];
           bufferline = "multiple";
-          popup-border = "all";
+          # popup-border = "all";
         };
 
-        keys = {
-          normal = {
-            g.l = [
-              "select_mode"
-              "goto_line_end"
-              "normal_mode"
-            ]; # make `gl` select to line end, instead of just go there
-            g.h = [
-              "select_mode"
-              "goto_line_start"
-              "normal_mode"
-            ];
-          };
-        };
+        # keys = {
+        #   normal = {
+        #     g.l = [
+        #       "select_mode"
+        #       "goto_line_end"
+        #       "normal_mode"
+        #     ]; # make `gl` select to line end, instead of just go there
+        #     g.h = [
+        #       "select_mode"
+        #       "goto_line_start"
+        #       "normal_mode"
+        #     ];
+        #   };
+        # };
       };
     };
   };
