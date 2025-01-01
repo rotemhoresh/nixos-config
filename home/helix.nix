@@ -38,6 +38,9 @@ in {
           nixd = with pkgs; {
             command = "${nixd}/bin/nixd";
           };
+          iwe = {
+            command = "~/test/iwe/target/release/iwes";
+          };
         };
 
         language = [
@@ -49,6 +52,15 @@ in {
             formatter = {
               command = "alejandra";
             };
+            auto-format = true;
+          }
+          {
+            name = "markdown";
+            language-servers = [
+              # "marksman"
+              # "markdown-oxide"
+              "iwe"
+            ];
             auto-format = true;
           }
           {
