@@ -39,7 +39,7 @@ in {
             command = "${nixd}/bin/nixd";
           };
           iwe = {
-            command = "~/test/iwe/target/release/iwes";
+            command = "iwes";
           };
         };
 
