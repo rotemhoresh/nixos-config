@@ -167,6 +167,7 @@ in {
             "window-rewrite" = {
               "title<.*YouTube.*>" = " ";
               "class<firefox>" = " ";
+              "class<spotify>" = " ";
               "class<clipse>" = " ";
               "title<Stremio - Freedom to Stream>" = "󰎁 ";
               "kitty" = " ";
