@@ -57,8 +57,8 @@ in {
           {
             name = "markdown";
             language-servers = [
-              # "marksman"
-              # "markdown-oxide"
+              "marksman"
+              "markdown-oxide"
               "iwe"
             ];
             auto-format = true;
