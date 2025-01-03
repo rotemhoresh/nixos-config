@@ -1,18 +1,5 @@
 # NixOS configuration
 
-<!--toc:start-->
-- [NixOS configuration](#nixos-configuration)
-  - [Prerequisites](#prerequisites)
-    - [NixOS](#nixos)
-      - [Note](#note)
-    - [Git](#git)
-  - [Setup](#setup)
-  - [About](#about)
-    - [Scripts](#scripts)
-    - [DE](#de)
-    - [Screenshots](#screenshots)
-<!--toc:end-->
-
 ## Prerequisites
 
 ### NixOS
@@ -87,7 +74,3 @@ sudo nixos-rebuild switch
 ### DE
 
 This configuration uses [Hyprland](https://hyprland.org/) as the Desktop Environment.
-
-### Screenshots
-
-![Neofetch](./screenshots/neofetch.png)
